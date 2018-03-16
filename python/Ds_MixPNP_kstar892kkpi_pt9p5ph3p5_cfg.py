@@ -60,7 +60,7 @@ generator.PythiaParameters.processParameters.extend(EvtGenExtraParticles)
 
 DsDaufilter = cms.EDFilter("PythiaMomDauFilter",
     ParticleID = cms.untracked.int32(431),
-    MomMinPt = cms.untracked.double(4),
+    MomMinPt = cms.untracked.double(9.5),
     MomMinEta = cms.untracked.double(-2.4),
     MomMaxEta = cms.untracked.double(2.4),
     DaughterIDs = cms.untracked.vint32(-313, 321),
@@ -71,7 +71,7 @@ DsDaufilter = cms.EDFilter("PythiaMomDauFilter",
 )
 Dsrapidityfilter = cms.EDFilter("PythiaFilter",
       ParticleID = cms.untracked.int32(431),
-                                  MinPt = cms.untracked.double(4),
+                                  MinPt = cms.untracked.double(9.5),
 								  MaxPt = cms.untracked.double(500.),
 								  MinRapidity = cms.untracked.double(-1.2),
 								  MaxRapidity = cms.untracked.double(1.2),
